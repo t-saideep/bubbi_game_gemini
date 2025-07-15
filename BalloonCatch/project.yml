@@ -1,0 +1,44 @@
+name: BalloonCatch
+options:
+  bundleIdPrefix: com.example
+targets:
+  BalloonCatch:
+    type: application
+    platform: iOS
+    deploymentTarget: "15.0"
+    sources:
+      - path: BalloonCatch
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.BalloonCatch
+        GENERATE_INFOPLIST_FILE: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: ""
+        DEVELOPMENT_TEAM: ""
+        ENABLE_TESTABILITY: YES
+  BalloonCatchUnitTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "15.0"
+    sources:
+      - path: BalloonCatchTests/GameLogicTests.swift
+    dependencies:
+      - target: BalloonCatch
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        DEVELOPMENT_TEAM: ""
+  BalloonCatchUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    deploymentTarget: "15.0"
+    sources:
+      - path: BalloonCatchTests/BalloonCatchUITests.swift
+    dependencies:
+      - target: BalloonCatch
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.BalloonCatchUITests
+        GENERATE_INFOPLIST_FILE: YES
+        DEVELOPMENT_TEAM: ""
+        TEST_TARGET_NAME: BalloonCatch
+  
