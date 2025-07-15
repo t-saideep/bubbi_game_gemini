@@ -64,7 +64,14 @@ class GameLogic: ObservableObject {
     }
 
     private func updateParticles() {
-        guard !particles.isEmpty else { return }
+        if particles.isEmpty {
+            if isPopped {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                    self.resetBalloon()
+                }
+            }
+            return
+        }
         for i in 0..<particles.count {
             particles[i].position.x += particles[i].velocity.dx / 60.0
             particles[i].position.y += particles[i].velocity.dy / 60.0

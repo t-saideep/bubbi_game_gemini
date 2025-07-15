@@ -26,13 +26,6 @@ struct ContentView: View {
                         .onTapGesture {
                             game.popBalloon()
                         }
-                } else {
-                    if game.particles.isEmpty {
-                        Button("Reset") {
-                            game.resetBalloon()
-                        }
-                        .accessibilityIdentifier("resetButton")
-                    }
                 }
             }
             .onAppear {

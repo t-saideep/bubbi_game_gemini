@@ -14,10 +14,11 @@ class BalloonCatchUITests: XCTestCase {
         XCTAssertTrue(balloon.waitForExistence(timeout: 5))
         balloon.tap()
 
-        let resetButton = app.buttons["resetButton"]
-        XCTAssertTrue(resetButton.waitForExistence(timeout: 1))
-        resetButton.tap()
+        // Wait for the old balloon to disappear
+        XCTAssertFalse(balloon.waitForExistence(timeout: 1))
 
-        XCTAssertTrue(balloon.waitForExistence(timeout: 1))
+        // Wait for the new balloon to appear
+        let newBalloon = app.otherElements["balloon"]
+        XCTAssertTrue(newBalloon.waitForExistence(timeout: 5))
     }
 }
