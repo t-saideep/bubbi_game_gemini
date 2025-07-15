@@ -13,6 +13,7 @@
 		5A6C576FF57DE195B2E3C499 /* Balloon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AC6029F4115211E8C80DA2 /* Balloon.swift */; };
 		7991CDADCF0EBF0CD3830734 /* GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F926E8BD5FFAD618A664491 /* GameLogic.swift */; };
 		82FB00BDDE59967A310C9038 /* GameLogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF913C50DDA81A5E8BE7772 /* GameLogicTests.swift */; };
+		AFA79B9C18F98F05CD1953F8 /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7DBA6E77E44BA4AD3BA1386 /* Particle.swift */; };
 		DFAA713B50DF3433103F14B5 /* BalloonCatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D696D9A969C5ADC9394BB27A /* BalloonCatchUITests.swift */; };
 		EBC300D529CEEDB560D40EF5 /* BalloonCatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BEF71B71EB5368151A23672 /* BalloonCatchApp.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,7 @@
 		8B9066E34C4C2DDB20AD12C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9F926E8BD5FFAD618A664491 /* GameLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLogic.swift; sourceTree = "<group>"; };
 		D696D9A969C5ADC9394BB27A /* BalloonCatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonCatchUITests.swift; sourceTree = "<group>"; };
+		E7DBA6E77E44BA4AD3BA1386 /* Particle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Particle.swift; sourceTree = "<group>"; };
 		EB336E3C13FAF597321E85F9 /* BalloonCatchUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = BalloonCatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D444B94589C8BFACE35C05 /* BalloonCatch.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = BalloonCatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -86,6 +88,7 @@
 				0C6D41DCA15371B8F825AEAC /* Constants.swift */,
 				8B9066E34C4C2DDB20AD12C1 /* ContentView.swift */,
 				9F926E8BD5FFAD618A664491 /* GameLogic.swift */,
+				E7DBA6E77E44BA4AD3BA1386 /* Particle.swift */,
 			);
 			path = BalloonCatch;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				25142701F08AE85CE4420BE4 /* Constants.swift in Sources */,
 				5448159BA9F89320E2BA57F1 /* ContentView.swift in Sources */,
 				7991CDADCF0EBF0CD3830734 /* GameLogic.swift in Sources */,
+				AFA79B9C18F98F05CD1953F8 /* Particle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

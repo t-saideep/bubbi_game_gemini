@@ -8,6 +8,7 @@ targets:
     deploymentTarget: "15.0"
     sources:
       - path: BalloonCatch
+      - path: BalloonCatch/Particle.swift
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.example.BalloonCatch

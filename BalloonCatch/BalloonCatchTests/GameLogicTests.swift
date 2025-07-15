@@ -144,4 +144,11 @@ class GameLogicTests: XCTestCase {
         }
         wait(for: [expectation], timeout: 1.0)
     }
+
+    func testParticleCreationOnPop() {
+        game.resetBalloon()
+        XCTAssertTrue(game.particles.isEmpty)
+        game.popBalloon()
+        XCTAssertEqual(game.particles.count, Constants.particleCount)
+    }
 }

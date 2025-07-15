@@ -8,6 +8,15 @@ struct ContentView: View {
         GeometryReader { geometry in
             ZStack {
                 Color.cyan.edgesIgnoringSafeArea(.all)
+
+                ForEach(game.particles) { particle in
+                    Circle()
+                        .fill(Color.red)
+                        .frame(width: particle.size, height: particle.size)
+                        .position(particle.position)
+                        .opacity(particle.opacity)
+                }
+
                 if !game.isPopped {
                     BalloonView()
                         .accessibilityIdentifier("balloon")
@@ -18,10 +27,12 @@ struct ContentView: View {
                             game.popBalloon()
                         }
                 } else {
-                    Button("Reset") {
-                        game.resetBalloon()
+                    if game.particles.isEmpty {
+                        Button("Reset") {
+                            game.resetBalloon()
+                        }
+                        .accessibilityIdentifier("resetButton")
                     }
-                    .accessibilityIdentifier("resetButton")
                 }
             }
             .onAppear {
