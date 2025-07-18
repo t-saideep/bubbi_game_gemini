@@ -70,3 +70,11 @@ APP_PATH=$(find ~/Library/Developer/Xcode/DerivedData -name "BalloonCatch.app" -
 # Install and launch
 open -a Simulator && xcrun simctl install booted $APP_PATH && xcrun simctl launch booted com.example.BalloonCatch
 ```
+
+### Running on a Physical Device
+
+1.  Open the generated project in Xcode: `open BalloonCatch/BalloonCatch.xcodeproj`
+2.  Connect your iPhone to your computer.
+3.  In the Xcode toolbar, select your iPhone from the device list.
+4.  Click the **Run** button (or press `Cmd+R`).
+
