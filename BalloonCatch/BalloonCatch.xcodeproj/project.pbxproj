@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 63;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -47,7 +47,7 @@
 		D696D9A969C5ADC9394BB27A /* BalloonCatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonCatchUITests.swift; sourceTree = "<group>"; };
 		E7DBA6E77E44BA4AD3BA1386 /* Particle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Particle.swift; sourceTree = "<group>"; };
 		EB336E3C13FAF597321E85F9 /* BalloonCatchUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = BalloonCatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6D444B94589C8BFACE35C05 /* BalloonCatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalloonCatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6D444B94589C8BFACE35C05 /* BalloonCatch.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = BalloonCatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -163,6 +163,9 @@
 						DevelopmentTeam = "";
 						TestTargetID = 4EEF031A2015B0499CE65881;
 					};
+					4EEF031A2015B0499CE65881 = {
+						DevelopmentTeam = "";
+					};
 					5A301A20C99CB66BC5FC5DE1 = {
 						DevelopmentTeam = "";
 					};
@@ -178,6 +181,7 @@
 			);
 			mainGroup = 2B5664825ECB86C343F900C1;
 			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 54;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -350,7 +354,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = MQ2CRV9Q2R;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_TESTABILITY = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -407,7 +411,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = MQ2CRV9Q2R;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_TESTABILITY = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

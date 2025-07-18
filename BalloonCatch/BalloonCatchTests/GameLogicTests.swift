@@ -132,17 +132,12 @@ class GameLogicTests: XCTestCase {
 
     func testResetBalloonFromPoppedState() {
         game.popBalloon()
-        let expectation = XCTestExpectation(description: "Wait for pop animation")
-        DispatchQueue.main.asyncAfter(deadline: .now() + Constants.popAnimationDuration + 0.6) {
-            self.game.resetBalloon()
-            XCTAssertFalse(self.game.isPopped)
-            XCTAssertEqual(self.game.scale, 1.0)
-            XCTAssertEqual(self.game.balloonOpacity, 1.0)
-            XCTAssertEqual(self.game.balloonPosition, CGPoint(x: 150, y: 250))
-            XCTAssertNotEqual(self.game.balloonVelocity, .zero)
-            expectation.fulfill()
-        }
-        wait(for: [expectation], timeout: 1.0)
+        game.resetBalloon()
+        XCTAssertFalse(game.isPopped)
+        XCTAssertEqual(game.scale, 1.0)
+        XCTAssertEqual(game.balloonOpacity, 1.0)
+        XCTAssertEqual(game.balloonPosition, CGPoint(x: 150, y: 250))
+        XCTAssertNotEqual(game.balloonVelocity, .zero)
     }
 
     func testParticleCreationOnPop() {

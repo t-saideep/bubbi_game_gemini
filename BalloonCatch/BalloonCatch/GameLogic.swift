@@ -51,7 +51,7 @@ class GameLogic: ObservableObject {
         self.particles = []
         self.balloonPosition = CGPoint(x: bounds.width / 2, y: bounds.height / 2)
         let randomAngle = Double.random(in: 0..<(2 * .pi))
-        self.balloonVelocity = CGVector(dx: cos(randomAngle), dy: sin(randomAngle))
+        self.balloonVelocity = CGVector(dx: cos(CGFloat(randomAngle)), dy: sin(CGFloat(randomAngle)))
     }
 
     private func createParticles() {
@@ -64,14 +64,7 @@ class GameLogic: ObservableObject {
     }
 
     private func updateParticles() {
-        if particles.isEmpty {
-            if isPopped {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                    self.resetBalloon()
-                }
-            }
-            return
-        }
+        guard !particles.isEmpty else { return }
         for i in 0..<particles.count {
             particles[i].position.x += particles[i].velocity.dx / 60.0
             particles[i].position.y += particles[i].velocity.dy / 60.0
